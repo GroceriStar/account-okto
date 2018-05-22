@@ -1,7 +1,7 @@
-import React from 'react'
+import React, { Component } from 'react';
 import { withAuth } from '@okta/okta-react';
 
-class ProfilePage extends React.Component {
+class ProfilePage extends Component {
   constructor(props){
     super(props);
     this.state = {
