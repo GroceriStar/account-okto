@@ -1,9 +1,11 @@
-import React from 'react'
+import React,    from 'react'
 import OktaAuth from '@okta/okta-auth-js'
-import { withAuth } from '@okta/okta-react'
+import {
+  withAuth
+ } from '@okta/okta-react'
 
 
-class LoginForm extends React.Compontent {
+class LoginForm extends React.Component {
   constructor(props){
     super(props);
     this.state: {
@@ -84,4 +86,4 @@ class LoginForm extends React.Compontent {
   }
 }
 
-export default
+export default withAuth(LoginForm)
